@@ -1,4 +1,4 @@
-name: Build Bluefin LTS HWE
+name: Build Blueshift LTS HWE
 
 on:
   pull_request:
@@ -18,5 +18,5 @@ jobs:
     uses: ./.github/workflows/reusable-build-image.yml
     secrets: inherit
     with:
-      image-name: bluefin-hwe
+      image-name: blueshift-hwe
       flavor: hwe

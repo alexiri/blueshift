@@ -5,10 +5,6 @@ set -xeuo pipefail
 # Image cleanup
 # Specifically called by build.sh
 
-# The compose repos we used during the build are point in time repos that are
-# not updated, so we don't want to leave them enabled.
-dnf config-manager --set-disabled baseos-compose,appstream-compose
-
 # Image-layer cleanup
 shopt -s extglob
 

@@ -3,8 +3,8 @@
 set -xeuo pipefail
 
 FLAVOR="gdx"
-IMAGE_NAME="bluefin-${FLAVOR}"
-IMAGE_REF="ostree-image-signed:docker://ghcr.io/ublue-os/bluefin-${FLAVOR}"
+IMAGE_NAME="blueshift-${FLAVOR}"
+IMAGE_REF="ostree-image-signed:docker://ghcr.io/alexiri/blueshift-${FLAVOR}"
 export FLAVOR
 export IMAGE_NAME
 export IMAGE_REF
