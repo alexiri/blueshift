@@ -1,0 +1,10 @@
+version: "1"
+rules:
+  - base: main
+    upstream: ublue-os:main
+    mergeMethod: merge
+    mergeUnstable: false
+  - base: upstream
+    upstream: ublue-os:main
+    mergeMethod: hardreset
+    mergeUnstable: false
