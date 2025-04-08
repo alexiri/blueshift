@@ -2,7 +2,7 @@ version: "1"
 rules:
   - base: main
     upstream: ublue-os:main
-    mergeMethod: merge
+    mergeMethod: rebase
     mergeUnstable: false
   - base: upstream
     upstream: ublue-os:main
