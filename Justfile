@@ -1,6 +1,6 @@
-export repo_organization := env("GITHUB_REPOSITORY_OWNER", "ublue-os")
-export image_name := env("IMAGE_NAME", "bluefin")
-export centos_version := env("CENTOS_VERSION", "stream10")
+export repo_organization := env("GITHUB_REPOSITORY_OWNER", "alexiri")
+export image_name := env("IMAGE_NAME", "blueshift")
+export centos_version := env("CENTOS_VERSION", "10-kitten")
 export default_tag := env("DEFAULT_TAG", "lts")
 export bib_image := env("BIB_IMAGE", "quay.io/centos-bootc/bootc-image-builder:latest")
 
@@ -368,10 +368,10 @@ patch-iso-branding override="0" iso_path="output/bootiso/install.iso":
         --privileged \
         -v ./output:/output \
         -v ./iso_files:/iso_files \
-        quay.io/centos/centos:stream10 \
+        quay.io/almalinuxorg/almalinux-bootc:10-kitten \
         bash -c 'dnf install -y lorax && \
     	mkdir /images && cd /iso_files/product && find . | cpio -c -o | gzip -9cv > /images/product.img && cd / \
-            && mkksiso --add images --volid bluefin-boot /{{ iso_path }} /output/final.iso'
+            && mkksiso --add images --volid blueshift-boot /{{ iso_path }} /output/final.iso'
 
     if [ {{ override }} -ne 0 ] ; then
         mv output/final.iso {{ iso_path }}
