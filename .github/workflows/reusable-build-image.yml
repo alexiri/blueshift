@@ -336,7 +336,7 @@ jobs:
             io.artifacthub.package.deprecated=false
             io.artifacthub.package.keywords=bootc,almalinux,bluefin,ublue,universal-blue
             io.artifacthub.package.license=Apache-2.0
-            io.artifacthub.package.logo-url=https://avatars.githubusercontent.com/u/120078124?s=200&v=4
+            io.artifacthub.package.logo-url=https://raw.githubusercontent.com/alexiri/blueshift/refs/heads/main/img/blueshift.png
             io.artifacthub.package.maintainers=[{\"name\":\"alexiri\",\"email\":\"alex.iribarren@gmail.com\"}]
             io.artifacthub.package.prerelease=true
             containers.bootc=1
